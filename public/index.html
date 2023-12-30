@@ -7,16 +7,41 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 </head>
-<body>  
-<nav id="desktop-nav">
-<div class="logo">Anu Benny</div>
+<body class="font-sans" style="font-family: 'Poppins', sans-serif;"></body>
+<!-- NAVBAR -->
+<nav id="desktop-nav" class="flex justify-around items-center h-36">
+<div class="logo text-2xl hover:cursor-pointer">Anu Benny</div>
 <div>
-    <ul class="nav-links">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+    <ul class="nav-links flex gap-8 text-lg">
+        <li><a href="#home" class="hover:text-gray-400 hover:underline"style="text-decoration-color: rgb(181, 181, 181);">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-400 hover:underline"style="text-decoration-color: rgb(181, 181, 181);">About</a></li>
+        <li><a href="#contact" class="hover:text-gray-400 hover:underline"style="text-decoration-color: rgb(181, 181, 181);">Contact</a></li>
+
     </ul>
 </div>
 </nav>
+
+<nav id="hamburger-nav" class="hidden">
+    <div class="logo text-1">Anu Benny</div>
+    <div class="hamburger-menu inline-block relative">
+        <div class="hamburger-icon flex flex-col justify-between h-6 w-8 cursor-pointer" onclick="toggleMenu()">
+            <span class="block bg-black w-full h-1 transition-all duration-300 ease-in-out"></span>
+            <span class="block bg-black w-full h-1 transition-all duration-300 ease-in-out"></span>
+            <span class="block bg-black w-full h-1 transition-all duration-300 ease-in-out"></span>
+
+      </div>
+      <div class="menu-links absolute top-full right-0 bg-white w-max max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+
+        <li><a href="#home" onclick="toggleMenu()" class="block px-4 text-center text-lg text-black no-underline transition-all duration-300 ease-in-out hover:text-gray-400 hover:underline">Home</a></li>       
+        <li><a href="#about" onclick="toggleMenu()" class="block px-4 text-center text-lg text-black no-underline transition-all duration-300 ease-in-out hover:text-gray-400 hover:underline">About</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" class="block px-4 text-center text-lg text-black no-underline transition-all duration-300 ease-in-out hover:text-gray-400 hover:underline">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+</nav>
+<script src="./script.js"></script>
 </body>
 </html>
+
+

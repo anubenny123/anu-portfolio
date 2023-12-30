@@ -87,7 +87,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 } */
 
-/* .menu-links { 
+.menu-links { 
   position: absolute; 
   top: 100%;
   right: 0;
@@ -96,7 +96,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-} */
+}
 
 /* .menu-links a {
   display: block;
